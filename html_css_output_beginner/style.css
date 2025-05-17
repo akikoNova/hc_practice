@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px;
+  padding: 0 4%;
+  text-align: center;
+}
+
+
+/* header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.site-title {
+  width: 100px;
+  height: 30px;
+  line-height: 10px;
+  padding: 10px 0;
+  font-size: 20px;
+  display: block;
+  background-color: #000;
+  color: white;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+
+/* Mainvisual */
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* 自己紹介 */
+#introduction .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+.content-title {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.text {
+  text-align: left;
+}
+
+div, p {
+  font-size: 18px;
+}
+
+#introduction img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-top: 12px;
+  display: flex;
+}
+
+
+/* Profile */
+#profile ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#profile li {
+  width: 32%;
+}
+
+#profile img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
+
+
+/* footer */
+#footer p {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+/* SP */
+@media screen and (max-width: 600px) {
+
+
+  /* Mainvisual */
+  #mainvisual img {
+    height: calc(100vh - 60px);
+  }
+
+
+  /* 自己紹介 */
+  #introduction .content {
+    flex-direction: column;
+  }
+
+  .content-title {
+    text-align: center;
+  }
+  
+  #introduction img {
+    margin-right: 0;
+  }
+
+
+  /*　Profile　*/
+  #profile ul {
+    flex-direction: column;
+  }
+
+  #profile li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
